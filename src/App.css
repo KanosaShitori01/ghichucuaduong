@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App__TaskReact{
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid rgb(56, 56, 55);
+  padding: 2rem;
+}
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.header h1{
+  font-size: 40px;
+}
+.btn{
+  padding: 1em 3rem;
+  background-color: rgb(82, 83, 82);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.tasks{
+  padding: 1rem 0;
+  min-height: 300px;
+  position: relative;
+}
+.task{
+  max-width: 100%;
+  padding: 10px 12px;
+  display: flex;
+  font-size: 18px;
+  margin: 1rem 0;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  justify-content: space-between;
+}
+.viewnote{
+  margin-top: 10px;
+  padding: 7px 10px;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.reminder{
+  border-left: 4px solid rgb(49, 49, 49);
+}
+.close{
+    font-size: 22px;
+    cursor: pointer;
+}
+.close:hover{
+    color: red;
+}
+
+.form-add{
+  max-width: 100%;
+}
+.form-control{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.form-control label{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-control input{
+  flex: 1;
+  padding: 10px;
+}
+.form-checkbox{
+
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.form-checkbox label{
+  width: auto;
+  margin-right: 1rem;
+}
+.form-checkbox input{
+  flex: 0;
+  margin-top: 2px;
+}
+.submit{
+  background-color: rgb(80, 83, 76);
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(62, 65, 62);
+}
+.alert{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+}
+.about{
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.note{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  color: black;
+  background-color: rgb(241, 241, 241);
+}
+@media(max-width:1024px){
+  .App__TaskReact{
+    width: 100%;
+  }
+}
